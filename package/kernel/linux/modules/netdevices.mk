@@ -645,7 +645,7 @@ $(eval $(call KernelPackage,ixgbevf))
 define KernelPackage/i40e
   SUBMENU:=$(NETWORK_DEVICES_MENU)
   TITLE:=Intel(R) Ethernet Controller XL710 Family support
-  DEPENDS:=@PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +LINUX_5_4:kmod-libphy
+  DEPENDS:=@PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy
   KCONFIG:=CONFIG_I40E \
     CONFIG_I40E_VXLAN=n \
     CONFIG_I40E_HWMON=y \
@@ -669,8 +669,7 @@ define KernelPackage/iavf
        CONFIG_I40EVF \
        CONFIG_IAVF
   FILES:= \
-       $(LINUX_DIR)/drivers/net/ethernet/intel/i40evf/i40evf.ko@lt4.20 \
-       $(LINUX_DIR)/drivers/net/ethernet/intel/iavf/iavf.ko@ge4.20
+       $(LINUX_DIR)/drivers/net/ethernet/intel/iavf/iavf.ko
   AUTOLOAD:=$(call AutoProbe,i40evf iavf)
   AUTOLOAD:=$(call AutoProbe,iavf)
 endef
