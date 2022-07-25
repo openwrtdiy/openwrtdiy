@@ -645,9 +645,11 @@ $(eval $(call KernelPackage,ixgbevf))
 define KernelPackage/i40e
   SUBMENU:=$(NETWORK_DEVICES_MENU)
   TITLE:=Intel(R) Ethernet Controller XL710 Family support
-  DEPENDS:=@PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core
+  DEPENDS:=@PCI_SUPPORT +kmod-mdio +kmod-ptp +kmod-hwmon-core +kmod-libphy
   KCONFIG:=CONFIG_I40E \
-    CONFIG_I40E_DCB=n
+    CONFIG_I40E_VXLAN=n \
+    CONFIG_I40E_HWMON=y \
+    CONFIG_I40E_DCA=n
   FILES:=$(LINUX_DIR)/drivers/net/ethernet/intel/i40e/i40e.ko
   AUTOLOAD:=$(call AutoProbe,i40e)
 endef
