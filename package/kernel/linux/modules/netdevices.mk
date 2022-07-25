@@ -653,7 +653,7 @@ define KernelPackage/i40e
 endef
 
 define KernelPackage/i40e/description
- Kernel modules for Intel(R) Ethernet Controller XL710 Family Ethernet adapters.
+ Kernel modules for Intel(R) Ethernet Controller XL710 Family 40 Gigabit Ethernet adapters.
 endef
 
 $(eval $(call KernelPackage,i40e))
@@ -661,7 +661,7 @@ $(eval $(call KernelPackage,i40e))
 
 define KernelPackage/i40evf
   SUBMENU:=$(NETWORK_DEVICES_MENU)
-  TITLE:=Intel(R) XL710 Virtual Function Ethernet support
+  TITLE:=Intel(R) Ethernet Adaptive Virtual Function support
   DEPENDS:=@PCI_SUPPORT +kmod-i40e
   KCONFIG:=CONFIG_I40EVF
   FILES:=$(LINUX_DIR)/drivers/net/ethernet/intel/i40evf/i40evf.ko
