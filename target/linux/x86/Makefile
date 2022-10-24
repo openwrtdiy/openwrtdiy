@@ -17,7 +17,12 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-button-hotplug
+DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-button-hotplug \
+kmod-bnx2 kmod-e1000e kmod-e1000 kmod-forcedeth kmod-i40e kmod-igb kmod-igc kmod-ixgbe kmod-macvlan kmod-r8169 kmod-sfp \
+kmod-crypto-sha256 kmod-br-netfilter \
+kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-rndis kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
+htop netdata ethtool iftop lm-sensors usbmuxd irqbalance \
+luci-theme-material luci-proto-bonding
 
 $(eval $(call BuildTarget))
 
