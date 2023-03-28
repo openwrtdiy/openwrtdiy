@@ -39,7 +39,7 @@ menu "DIY Software"
 			select LUCI_LANG_zh_Hans
 
 		config DIY_Nginx/PHP7
-			bool "Nginx/PHP Support"
+			bool "Nginx/PHP7 Support"
 			select PACKAGE_luci
 			select PACKAGE_luci-ssl-nginx
 			select PACKAGE_luci-base
@@ -88,8 +88,8 @@ menu "DIY Software"
 			select LUCI_LANG_en
 			select LUCI_LANG_zh_Hans
 
-		config DIY_Nginx/PHP/MariaDB
-			bool "Nginx/PHP/MariaDB Support"
+		config DIY_Nginx/PHP7/MariaDB
+			bool "Nginx/PHP7/MariaDB Support"
 			select PACKAGE_luci
 			select PACKAGE_luci-ssl-nginx
 			select PACKAGE_luci-base
@@ -143,4 +143,5 @@ menu "DIY Software"
 			select PACKAGE_shadow-utils
 			select LUCI_LANG_en
 			select LUCI_LANG_zh_Hans
+	endmenu
 endmenu
