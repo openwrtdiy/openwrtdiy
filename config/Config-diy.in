@@ -1,0 +1,146 @@
+# Copyright (C) 2017-2023 OpenWrt.org
+#
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
+#
+
+menu "DIY Software"
+
+	menu "WEB Server OpenWrt-21.02"
+		config DIY_Nginx
+			bool "Nginx Support"
+			select PACKAGE_luci
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_luci-base
+			select PACKAGE_luci-compat
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-all-module
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+
+		config DIY_Nginx/PHP7
+			bool "Nginx/PHP Support"
+			select PACKAGE_luci
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_luci-base
+			select PACKAGE_luci-compat
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-all-module
+			select PACKAGE_php7
+			select PACKAGE_php7-cgi
+			select PACKAGE_php7-fastcgi
+			select PACKAGE_php7-fpm
+			select PACKAGE_php7-mod-ctype
+			select PACKAGE_php7-mod-curl
+			select PACKAGE_php7-mod-dom
+			select PACKAGE_php7-mod-exif
+			select PACKAGE_php7-mod-fileinfo
+			select PACKAGE_php7-mod-gd
+			select PACKAGE_php7-mod-iconv
+			select PACKAGE_php7-mod-json
+			select PACKAGE_php7-mod-mbstring
+			select PACKAGE_php7-mod-mysqli
+			select PACKAGE_php7-mod-opcache
+			select PACKAGE_php7-mod-openssl
+			select PACKAGE_php7-mod-pdo
+			select PACKAGE_php7-mod-pdo-mysql
+			select PACKAGE_php7-mod-zip
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+
+		config DIY_Nginx/PHP/MariaDB
+			bool "Nginx/PHP/MariaDB Support"
+			select PACKAGE_luci
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_luci-base
+			select PACKAGE_luci-compat
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-all-module
+			select PACKAGE_php7
+			select PACKAGE_php7-cgi
+			select PACKAGE_php7-fastcgi
+			select PACKAGE_php7-fpm
+			select PACKAGE_php7-mod-ctype
+			select PACKAGE_php7-mod-curl
+			select PACKAGE_php7-mod-dom
+			select PACKAGE_php7-mod-exif
+			select PACKAGE_php7-mod-fileinfo
+			select PACKAGE_php7-mod-gd
+			select PACKAGE_php7-mod-iconv
+			select PACKAGE_php7-mod-json
+			select PACKAGE_php7-mod-mbstring
+			select PACKAGE_php7-mod-mysqli
+			select PACKAGE_php7-mod-opcache
+			select PACKAGE_php7-mod-openssl
+			select PACKAGE_php7-mod-pdo
+			select PACKAGE_php7-mod-pdo-mysql
+			select PACKAGE_php7-mod-zip
+			select PACKAGE_mariadb-client
+			select PACKAGE_mariadb-client-extra
+			select PACKAGE_mariadb-server-base
+			select PACKAGE_mariadb-server
+			select PACKAGE_mariadb-server-extra
+			select PACKAGE_shadow-utils
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+endmenu
