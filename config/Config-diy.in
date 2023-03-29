@@ -9,10 +9,7 @@ menu "DIY Software"
 	menu "WEB Server OpenWrt-21.02"
 		config DIY_Nginx
 			bool "Nginx Support"
-			select PACKAGE_luci
 			select PACKAGE_luci-ssl-nginx
-			select PACKAGE_luci-base
-			select PACKAGE_luci-compat
 			select PACKAGE_blockd
 			select PACKAGE_kmod-fs-exfat
 			select PACKAGE_kmod-fs-ext4
@@ -40,10 +37,7 @@ menu "DIY Software"
 
 		config DIY_Nginx/PHP7
 			bool "Nginx/PHP7 Support"
-			select PACKAGE_luci
 			select PACKAGE_luci-ssl-nginx
-			select PACKAGE_luci-base
-			select PACKAGE_luci-compat
 			select PACKAGE_blockd
 			select PACKAGE_kmod-fs-exfat
 			select PACKAGE_kmod-fs-ext4
@@ -68,7 +62,6 @@ menu "DIY Software"
 			select PACKAGE_nginx-all-module
 			select PACKAGE_php7
 			select PACKAGE_php7-cgi
-			select PACKAGE_php7-fastcgi
 			select PACKAGE_php7-fpm
 			select PACKAGE_php7-mod-ctype
 			select PACKAGE_php7-mod-curl
@@ -82,18 +75,13 @@ menu "DIY Software"
 			select PACKAGE_php7-mod-mysqli
 			select PACKAGE_php7-mod-opcache
 			select PACKAGE_php7-mod-openssl
-			select PACKAGE_php7-mod-pdo
-			select PACKAGE_php7-mod-pdo-mysql
 			select PACKAGE_php7-mod-zip
 			select LUCI_LANG_en
 			select LUCI_LANG_zh_Hans
 
 		config DIY_Nginx/PHP7/MariaDB
 			bool "Nginx/PHP7/MariaDB Support"
-			select PACKAGE_luci
 			select PACKAGE_luci-ssl-nginx
-			select PACKAGE_luci-base
-			select PACKAGE_luci-compat
 			select PACKAGE_blockd
 			select PACKAGE_kmod-fs-exfat
 			select PACKAGE_kmod-fs-ext4
@@ -118,7 +106,6 @@ menu "DIY Software"
 			select PACKAGE_nginx-all-module
 			select PACKAGE_php7
 			select PACKAGE_php7-cgi
-			select PACKAGE_php7-fastcgi
 			select PACKAGE_php7-fpm
 			select PACKAGE_php7-mod-ctype
 			select PACKAGE_php7-mod-curl
@@ -132,8 +119,6 @@ menu "DIY Software"
 			select PACKAGE_php7-mod-mysqli
 			select PACKAGE_php7-mod-opcache
 			select PACKAGE_php7-mod-openssl
-			select PACKAGE_php7-mod-pdo
-			select PACKAGE_php7-mod-pdo-mysql
 			select PACKAGE_php7-mod-zip
 			select PACKAGE_mariadb-client
 			select PACKAGE_mariadb-client-extra
