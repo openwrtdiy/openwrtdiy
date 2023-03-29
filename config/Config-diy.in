@@ -106,7 +106,7 @@ menu "DIY Software"
 			select PACKAGE_nginx-all-module
 			select PACKAGE_php7
 			select PACKAGE_php7-cgi
-			select PACKAGE_php7-fpm
+			select PACKAGE_php7-fastcgi
 			select PACKAGE_php7-mod-ctype
 			select PACKAGE_php7-mod-curl
 			select PACKAGE_php7-mod-dom
