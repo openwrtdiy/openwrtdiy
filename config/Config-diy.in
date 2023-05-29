@@ -75,6 +75,7 @@ menu "DIY Software"
 			select PACKAGE_php7-mod-mysqli
 			select PACKAGE_php7-mod-opcache
 			select PACKAGE_php7-mod-openssl
+			select PACKAGE_php7-mod-session
 			select PACKAGE_php7-mod-zip
 			select LUCI_LANG_en
 			select LUCI_LANG_zh_Hans
@@ -106,6 +107,7 @@ menu "DIY Software"
 			select PACKAGE_nginx-all-module
 			select PACKAGE_php7
 			select PACKAGE_php7-cgi
+			select PACKAGE_php7-cli
 			select PACKAGE_php7-fastcgi
 			select PACKAGE_php7-mod-ctype
 			select PACKAGE_php7-mod-curl
@@ -119,6 +121,7 @@ menu "DIY Software"
 			select PACKAGE_php7-mod-mysqli
 			select PACKAGE_php7-mod-opcache
 			select PACKAGE_php7-mod-openssl
+			select PACKAGE_php7-mod-session
 			select PACKAGE_php7-mod-zip
 			select PACKAGE_mariadb-client
 			select PACKAGE_mariadb-client-extra
@@ -126,6 +129,7 @@ menu "DIY Software"
 			select PACKAGE_mariadb-server
 			select PACKAGE_mariadb-server-extra
 			select PACKAGE_shadow-utils
+			select PACKAGE_coreutils-stty
 			select LUCI_LANG_en
 			select LUCI_LANG_zh_Hans
 	endmenu
