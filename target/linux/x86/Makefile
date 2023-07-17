@@ -16,10 +16,12 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += \
-	partx-utils mkf2fs \
-	e2fsprogs kmod-button-hotplug \
-	grub2-bios-setup
+DEFAULT_PACKAGES += partx-utils mkf2fs fdisk e2fsprogs kmod-button-hotplug \
+		    kmod-i40e kmod-macvlan kmod-sfp \
+		    kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-rndis kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 usbmuxd \
+		    kmod-br-netfilter kmod-tcp-bbr \
+		    htop netdata zerotier ethtool iftop lm-sensors irqbalance \
+		    grub2-bios-setup
 
 $(eval $(call BuildTarget))
 
