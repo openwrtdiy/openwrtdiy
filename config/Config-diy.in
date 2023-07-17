@@ -1,0 +1,134 @@
+# Copyright (C) 2017-2023 OpenWrt.org
+#
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
+#
+
+menu "DIY Software"
+
+	menu "WEB Server OpenWrt-23.05"
+		config DIY_Nginx
+			bool "Nginx Support"
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-full
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+
+		config DIY_Nginx/PHP8
+			bool "Nginx/PHP8 Support"
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-full
+			select PACKAGE_php8
+			select PACKAGE_php8-cgi
+			select PACKAGE_php8-fpm
+			select PACKAGE_php8-mod-ctype
+			select PACKAGE_php8-mod-curl
+			select PACKAGE_php8-mod-dom
+			select PACKAGE_php8-mod-exif
+			select PACKAGE_php8-mod-fileinfo
+			select PACKAGE_php8-mod-gd
+			select PACKAGE_php8-mod-iconv
+			select PACKAGE_php8-mod-mbstring
+			select PACKAGE_php8-mod-mysqli
+			select PACKAGE_php8-mod-opcache
+			select PACKAGE_php8-mod-openssl
+			select PACKAGE_php8-mod-session
+			select PACKAGE_php8-mod-zip
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+
+		config DIY_Nginx/PHP8/MariaDB
+			bool "Nginx/PHP8/MariaDB Support"
+			select PACKAGE_luci-ssl-nginx
+			select PACKAGE_blockd
+			select PACKAGE_kmod-fs-exfat
+			select PACKAGE_kmod-fs-ext4
+			select PACKAGE_kmod-fs-ntfs
+			select PACKAGE_kmod-fs-vfat
+			select PACKAGE_kmod-nls-cp437
+			select PACKAGE_kmod-nls-cp932
+			select PACKAGE_kmod-nls-cp936
+			select PACKAGE_kmod-nls-cp950
+			select PACKAGE_kmod-nls-iso8859-1
+			select PACKAGE_kmod-nls-utf8
+			select PACKAGE_kmod-usb-ohci
+			select PACKAGE_kmod-usb-storage-uas
+			select PACKAGE_kmod-usb-uhci
+			select PACKAGE_kmod-usb3
+			select PACKAGE_fdisk
+			select PACKAGE_e2fsprogs
+			select PACKAGE_tar
+			select PACKAGE_usbutils
+			select PACKAGE_zoneinfo-asia
+			select PACKAGE_zoneinfo-core
+			select PACKAGE_nginx-full
+			select PACKAGE_php8
+			select PACKAGE_php8-cgi
+			select PACKAGE_php8-cli
+			select PACKAGE_php8-fastcgi
+			select PACKAGE_php8-mod-ctype
+			select PACKAGE_php8-mod-curl
+			select PACKAGE_php8-mod-dom
+			select PACKAGE_php8-mod-exif
+			select PACKAGE_php8-mod-fileinfo
+			select PACKAGE_php8-mod-gd
+			select PACKAGE_php8-mod-iconv
+			select PACKAGE_php8-mod-mbstring
+			select PACKAGE_php8-mod-mysqli
+			select PACKAGE_php8-mod-opcache
+			select PACKAGE_php8-mod-openssl
+			select PACKAGE_php8-mod-session
+			select PACKAGE_php8-mod-zip
+			select PACKAGE_mariadb-client
+			select PACKAGE_mariadb-client-extra
+			select PACKAGE_mariadb-server-base
+			select PACKAGE_mariadb-server
+			select PACKAGE_mariadb-server-extra
+			select PACKAGE_shadow-utils
+			select PACKAGE_coreutils-stty
+			select LUCI_LANG_en
+			select LUCI_LANG_zh_Hans
+	endmenu
+endmenu
