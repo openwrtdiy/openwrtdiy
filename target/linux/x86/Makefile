@@ -22,6 +22,7 @@ DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-button-hotplug \
 		    kmod-crypto-sha256 kmod-br-netfilter kmod-tcp-bbr \
 		    kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-rndis kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
 		    htop zerotier ethtool iftop usbmuxd irqbalance \
+		    iptables-mod-conntrack-extra iptables-nft \
 		    netdata python3 python3-urllib3 python3-yaml lm-sensors bash \
 		    luci-theme-material
 
