@@ -20,6 +20,7 @@ DEFAULT_PACKAGES += partx-utils mkf2fs fdisk e2fsprogs kmod-button-hotplug \
 		    kmod-i40e kmod-macvlan kmod-sfp \
 		    kmod-usb-net kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-rndis kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 usbmuxd \
 		    kmod-br-netfilter kmod-tcp-bbr \
+		    iptables-mod-conntrack-extra iptables-nft \
 		    htop zerotier ethtool iftop irqbalance \
 		    netdata python3 python3-urllib3 python3-yaml lm-sensors bash \
 		    grub2-bios-setup
