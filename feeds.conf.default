@@ -2,4 +2,4 @@ src-git packages https://github.com/openwrtdiy/packages.git;pppoe-23.05
 src-git luci https://github.com/openwrtdiy/luci.git;pppoe-23.05
 src-git routing https://github.com/openwrtdiy/routing.git;pppoe-23.05
 src-git telephony https://github.com/openwrtdiy/telephony.git;openwrt-23.05
-src-git app https://github.com/openwrtdiy/openwrt-ipk.git;openwrt-23.05
+src-git app https://github.com/openwrtdiy/openwrt-ipk.git
