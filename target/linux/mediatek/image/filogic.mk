@@ -540,7 +540,7 @@ define Device/jdcloud_re-cp-03
   DEVICE_DTC_FLAGS := --pad 4096
   DEVICE_DTS_LOADADDR := 0x43f00000
   DEVICE_PACKAGES := kmod-mt7986-firmware mt7986-wo-firmware \
-	e2fsprogs f2fsck mkf2fs
+	blkid fdisk lsblk sgdisk e2fsprogs f2fsck mkf2fs
   KERNEL_LOADADDR := 0x44000000
   KERNEL := kernel-bin | gzip
   KERNEL_INITRAMFS := kernel-bin | lzma | \
